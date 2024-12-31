@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
       isLoading = true;
     });
 
-    final String apiUrl = "https://www.csic410-project.infinityfreeapp.com/login.php";
+    final String apiUrl = "http://www.csic410-project.infinityfreeapp.com/login.php";
 
     try {
       final response = await http.post(

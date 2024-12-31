@@ -40,7 +40,7 @@ class _RegisterPageState extends State<RegisterPage> {
       isLoading = true;
     });
 
-    final String apiUrl = "https://www.csic410-project.infinityfreeapp.com/register.php";
+    final String apiUrl = "http://www.csic410-project.infinityfreeapp.com/register.php";
 
     try {
       final response = await http.post(

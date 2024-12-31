@@ -28,7 +28,7 @@ class _AddNotePageState extends State<AddNotePage> {
 
     setState(() => isLoading = true);
 
-    final String apiUrl = "https://www.csic410-project.infinityfreeapp.com/add_note.php";
+    final String apiUrl = "http://www.csic410-project.infinityfreeapp.com/add_note.php";
 
     try {
       final response = await http.post(

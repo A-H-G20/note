@@ -25,7 +25,7 @@ class _NotesPageState extends State<NotesPage> {
   Future<void> fetchNotes() async {
     setState(() => isLoading = true);
 
-    final String apiUrl = "https://www.csic410-project.infinityfreeapp.com/get_notes.php";
+    final String apiUrl = "http://www.csic410-project.infinityfreeapp.com/get_notes.php";
 
     try {
       final response = await http.post(
@@ -54,7 +54,7 @@ class _NotesPageState extends State<NotesPage> {
 
   /// Delete Note
   Future<void> deleteNote(int noteId) async {
-    final String apiUrl = "https://www.csic410-project.infinityfreeapp.com/delete_note.php";
+    final String apiUrl = "http://www.csic410-project.infinityfreeapp.com/delete_note.php";
 
     try {
       final response = await http.post(

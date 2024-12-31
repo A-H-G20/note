@@ -41,7 +41,7 @@ class _EditNotePageState extends State<EditNotePage> {
 
     setState(() => isLoading = true);
 
-    final String apiUrl = "https://www.csic410-project.infinityfreeapp.com/edit_note.php";
+    final String apiUrl = "http://www.csic410-project.infinityfreeapp.com/edit_note.php";
 
     try {
       final response = await http.post(
